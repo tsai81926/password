@@ -13,6 +13,8 @@ while i > 0:
 		print('登入成功!!')
 		break #阻斷迴圈
 	else:
-		print('密碼錯誤!還有', i,'次機會')
-		if i == 0:
-			break
+		print('密碼錯誤!')
+		if i > 0:
+			print('還有', i,'次機會')
+		else:
+			print('帳號已鎖定!!')
