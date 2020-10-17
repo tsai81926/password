@@ -6,13 +6,13 @@
 #如果不正確，就印出'密碼錯誤! 還有_次機會!'
 password = 'a123456'
 i = 5
-while True:
+while i > 0:
+	i = i - 1
 	pwd = input('請輸入密碼: ')
 	if pwd == password:
 		print('登入成功!!')
 		break #阻斷迴圈
 	else:
-		i = i - 1
-		print('密碼錯誤!您還有', i,'次機會')
+		print('密碼錯誤!還有', i,'次機會')
 		if i == 0:
 			break
